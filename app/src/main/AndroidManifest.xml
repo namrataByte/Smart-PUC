@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smart_puc" >
+    <!-- Add this permission inside the <manifest> element -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smart_puc_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smart_puc_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".profile_edit_page"
+            android:exported="true" />
+        <activity
+            android:name=".profile_page"
+            android:exported="true" /> <!-- MainActivity is the splash screen and launcher activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- SignupActivity for signing up new users -->
+        <activity
+            android:name=".signup_page"
+            android:exported="true" /> <!-- or true, depending on your needs -->
+        <!-- HomeActivity for the home screen after login/signup -->
+        <activity android:name=".home_activity" /> <!-- LoginActivity for the login screen -->
+        <activity android:name=".login_page" />
+    </application>
+
+</manifest>

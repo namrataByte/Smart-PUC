@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary color for your app -->
+    <color name="colorPrimary">#6200EE</color>
+    <!-- Accent color for your app -->
+    <color name="colorAccent">#03DAC5</color>
+    <!-- Other colors -->
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="toolbar">#DAFFDE</color> <!-- A dark blue shade -->
+    <color name="profile">#99FF99</color>
+    <color name="button">#B3FFB4</color>
+
+</resources>

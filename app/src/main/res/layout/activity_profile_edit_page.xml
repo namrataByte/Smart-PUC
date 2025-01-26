@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_edit_page">
+
+  <!-- Toolbar -->
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/profile_toolbar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@color/toolbar"
+      android:titleTextColor="#000000"
+      app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_default="wrap"/>
+
+  <!-- Username Input -->
+  <EditText
+      android:id="@+id/username_input"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Enter Username"
+      app:layout_constraintTop_toBottomOf="@id/profile_toolbar"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="16dp"/>
+
+  <!-- PUC ID Input -->
+  <EditText
+      android:id="@+id/puc_id_input"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Enter PUC ID"
+      app:layout_constraintTop_toBottomOf="@id/username_input"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="16dp"/>
+
+  <!-- Phone Input -->
+  <EditText
+      android:id="@+id/phone_input"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Enter Phone"
+      app:layout_constraintTop_toBottomOf="@id/puc_id_input"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="16dp"/>
+
+  <!-- Save Button -->
+  <Button
+      android:id="@+id/save_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Save"
+      app:layout_constraintTop_toBottomOf="@id/phone_input"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="16dp"
+      app:backgroundTint="@color/button"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
